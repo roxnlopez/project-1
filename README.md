@@ -2,6 +2,6 @@ For my project, I am thinking of something similar to the racer game. But maybe,
 Trello: https://trello.com/b/g3q2QUdr/project-1
 <img src="Wireframe.jpg">
 
-think about difficulty level or just one level of ease(?)
+think about difficulty level or just one level of ease(?) OR OR OOORRR different amounts of time. 10sec 30sec 45 sec
 
 
