@@ -1,3 +1,6 @@
+For my project, I am thinking of something similar to the racer game. But maybe, one player against the computer. Haven't decided on that bit yet. And I want to put in random landmines throughout the course. I've also thought about scoreboards, timers, working reset button, and a player button that shows life left or some aspect like that.
+
+
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Project #1: The Game
 
 ### Overview
