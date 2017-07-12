@@ -4,5 +4,7 @@ Trello: https://trello.com/b/g3q2QUdr/project-1
 
 think about difficulty level or just one level of ease(?) OR OR OOORRR different amounts of time. 10sec 30sec 45 sec 
 and maybe different sizes of grids
-
+Game: start, stop, timer, reset
+Board: draw board out, plantMines throughout, calculateDistance, traverse, reveal, gameOver
+Field: element, x, y, flagged, revealed, mine, empty, 
 
