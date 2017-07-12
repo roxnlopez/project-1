@@ -5,8 +5,23 @@
 	<link rel="stylesheet" href="main.css">
 </head>
 <body>
+	<div class="container">
+	<h1>MAY THE ODDS BE EVER IN YOUR FAVOR</h1>
+	<div class="minefield">
+		<button class="button">BEGIN</button>
+		<div class="left">
+		<p id="rules">Rules: Make it across the field, <br>in one piece.<br>Remember, landmines are sprinkled <br>from here to the city.</p>
+		<p>Racer 1 Score</p>
+		</div>
+		<div class="right">Racer 2 Score</div>
+	</div>
+		<button class="replay">START OVER</button>
+	</div>
 
 
-<script src="main.js"></script>
+	<script src="main.js">
+		var game = new Game();
+		game.start();
+	</script>
 </body>
 </html>
