@@ -9,4 +9,5 @@ and maybe different sizes of grids
 -Field: element, x, y, flagged, revealed, mine, empty, 
 -both players go at same time/both want to reach finish/no need for timer bc based on distance (if oodles of time, make timer for funsies)
 -bombs randomized
+-forcing both players to move forward with JS (setInterval(stuffToDo, seconds b/n))
 
