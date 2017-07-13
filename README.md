@@ -10,4 +10,4 @@ and maybe different sizes of grids
 -both players go at same time/both want to reach finish/no need for timer bc based on distance (if oodles of time, make timer for funsies)
 -bombs randomized
 -forcing both players to move forward with JS (setInterval(stuffToDo, seconds b/n))
-
+-ok, i just fixed the alignment of my page. I'm starting on my characters...those little fuckers better fit.
