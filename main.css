@@ -1,6 +1,6 @@
 .container {
-	background-image: url("http://krishnadraws.com/wp-content/uploads/2017/06/post_apocalyptic_sunrise-800x474.jpg");
-	
+	background: url("http://krishnadraws.com/wp-content/uploads/2017/06/post_apocalyptic_sunrise-800x474.jpg") no-repeat;
+	background-size: cover;
 }
 
 h1 {
@@ -27,6 +27,8 @@ h1 {
 	width: 48%;
 	box-sizing: border-box;
 	margin: 10px;
+	background-color: #499167;
+	border-radius: 13px;
 }
 
 .replay {
