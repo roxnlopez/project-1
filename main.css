@@ -1,92 +1,104 @@
-body {
+.container {
 	background-image: url("http://krishnadraws.com/wp-content/uploads/2017/06/post_apocalyptic_sunrise-800x474.jpg");
-	background-repeat: no-repeat;
-	background-position: center;
-	display: block;
+	
 }
 
 h1 {
+	font-family: 'Rock Salt', cursive; 
 	font-size: 25px;
-	font-weight: bold;
-	color: #6A2E35;
+	color: #DD0426;
 	text-align: center;
 	display: block;
 	font-style: italic;
 	letter-spacing: 3px;
-}
-
-.gameboard {
-	border: 1px solid purple;
-	height: 360px;
-	display: inline-block;
-	width: 48%;
-	box-sizing: border-box;
+	padding: 15px;
 }
 
 .button {
-	border: 1px solid green;
-	font-weight: bold;
+	font-family: 'Amatic SC', cursive;
 	font-size: 20px;
 	margin: 0 auto;
 	display: block;
 }
 
+.gameboard {
+	height: 400px;
+	display: inline-block;
+	width: 48%;
+	box-sizing: border-box;
+	margin: 10px;
+}
+
 .replay {
-	border: 1px solid red;
-	color: yellow;
-	background-color: green;
-	margin-top: 160px;
-	margin-left: 780px;
+	font-family: 'Amatic SC', cursive;
+	color: #252627;
+	background-color: #5BC8AF;
+	display: block;
+	margin: 0 auto;
 	font-size: 20px;
+	margin-bottom: 10px;
 }
 
 #rules {
 	font-style: italic;
-	font-size: 15px;
-	color: #5BC8AF;
+	font-size: 18px;
+	color: blue;
 	vertical-align: top;
+	text-align: center;
 }
 
 .right {
-	
-	color: #9A275A;
+	color: #FFE74C;
 	font-weight: bold;
-	border: 1px solid blue;
-	display: inline-block;
-	width: 23%;
-	box-sizing: border-box;
-	vertical-align: top;
-}
-
-.left {
-	color: #6320EE;
-	font-weight: bold;
-	border: 1px solid yellow;
+	height: 400px;
 	display: inline-block;
 	width: 24%;
 	box-sizing: border-box;
 	vertical-align: top;
+	text-align: center;
+	margin-top: 10px;
+	background-color: #6E8898;
+	font-size: 18px;
+}
+
+.left {
+	color: #FFE74C;
+	font-weight: bold;
+	display: inline-block;
+	height: 400px;
+	width: 24%;
+	box-sizing: border-box;
+	vertical-align: top;
+	text-align: center;
+	margin-top: 10px;
+	background-color: #6E8898;
+	font-size: 18px;
 }
 
 .r1 {
-	border: 1px solid pink;
 	width: 45px;
 	display: inline-block;
 	color: blue;
+	top: 78%;
+	left: 30%;
+	position: absolute;
+	padding: 15px;
 }
 
 .r2 {
-	border: 1px solid orange;
 	width: 45px;
 	display: inline-block;
 	color: red;
+	top: 78%;
+	left: 60%;
+	position: absolute;
+	padding: 15px;
 }
 
 footer {
 	display: block;
-	text-align: center;
-	font-weight: bold;
-	font-stretch: all;
 	color: blue;
 	letter-spacing: 2px;
+	text-align: center;
+	font-family: 'Amatic SC', cursive;
 }
