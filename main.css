@@ -70,10 +70,16 @@ h1 {
 
 .r1 {
 	border: 1px solid pink;
+	width: 45px;
+	display: inline-block;
+	color: blue;
 }
 
 .r2 {
 	border: 1px solid orange;
+	width: 45px;
+	display: inline-block;
+	color: red;
 }
 
 footer {
