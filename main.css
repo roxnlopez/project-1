@@ -2,61 +2,85 @@ body {
 	background-image: url("http://krishnadraws.com/wp-content/uploads/2017/06/post_apocalyptic_sunrise-800x474.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: 100%;
-
+	display: block;
 }
 
 h1 {
 	font-size: 25px;
 	font-weight: bold;
-	color: red;
+	color: #6A2E35;
 	text-align: center;
+	display: block;
 	font-style: italic;
-	padding: 7px;
 	letter-spacing: 3px;
+}
+
+.gameboard {
+	border: 1px solid purple;
+	height: 360px;
+	display: inline-block;
+	width: 48%;
+	box-sizing: border-box;
 }
 
 .button {
 	border: 1px solid green;
 	font-weight: bold;
 	font-size: 20px;
-	margin-left: 550px;
-
+	margin: 0 auto;
+	display: block;
 }
 
 .replay {
 	border: 1px solid red;
 	color: yellow;
 	background-color: green;
-	margin-top: 300px;
-	margin-left: 600px;
-	font-size: 24px;
+	margin-top: 160px;
+	margin-left: 780px;
+	font-size: 20px;
 }
 
 #rules {
 	font-style: italic;
 	font-size: 15px;
 	color: #5BC8AF;
+	vertical-align: top;
 }
 
 .right {
-	position: relative;
-	bottom: 150px;
-	left: 980px;
-	margin-top: 30px;
-	padding: 20px;
+	
 	color: #9A275A;
 	font-weight: bold;
 	border: 1px solid blue;
+	display: inline-block;
+	width: 23%;
+	box-sizing: border-box;
+	vertical-align: top;
 }
 
-	.left {
-	position: relative;
-	bottom: 50px;
-	left: 20px;
-	margin-top: 100px;
-	padding: 10px;
+.left {
 	color: #6320EE;
 	font-weight: bold;
 	border: 1px solid yellow;
+	display: inline-block;
+	width: 24%;
+	box-sizing: border-box;
+	vertical-align: top;
+}
+
+.r1 {
+	border: 1px solid pink;
+}
+
+.r2 {
+	border: 1px solid orange;
+}
+
+footer {
+	display: block;
+	text-align: center;
+	font-weight: bold;
+	font-stretch: all;
+	color: blue;
+	letter-spacing: 2px;
 }
