@@ -32,11 +32,22 @@ function Play() {
 	//create the listener and apply keys
 	//var setListener = function() {
 		$(document).keydown(function(event) {
-			if (event.which == 38 || event.which == 37 || event.which == 39) {
-				player1.move();
-			} else if (event.which == 90 && event.which == 88 && event.which == 67) {
-				player2.move();
+			if (event.which == 38) {
+				player1.move(up);
+			} else if (event.which == 37) {
+				player1.move(left);
+			} else if (event.which == 39) {
+				player1.move(right);
+			} 
+
+			if (event.which == 90 ) {
+				player2.move(left);
+			} else if (event.which == 88){
+				player2.move(up);
+			} else if (event.which == 67){
+				player2.move(right);
 			}
+		
 			//winner declared based on reaching finish line
 			if (parseInt($('#r1').css("top")) >= parseInt($('#gameboard').css("top"))) {
 					gameOver(player1);
@@ -47,6 +58,7 @@ function Play() {
 }
 
 var gameOver = function(winner) {
+	console.log('hi');
 	if (confirm("Game Over!" + winner + " wins! Play again.")) {
 		player1.css("finish", "0%");
 		player2.css("finish", "0%");
