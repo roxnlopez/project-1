@@ -15,3 +15,4 @@ and maybe different sizes of grids
 -got my characters in
 -set timeout for start of game(setInterval kept re-starting and wouldn't shut up)
 -aiming to assign keys to players now.
+JS is stupid....or my head won't cooperate...jquery instead.
