@@ -77,6 +77,12 @@ h1 {
 	font-size: 18px;
 }
 
+.finish {
+	border: 3px solid black;
+	padding: 10px;
+	color: red;
+}
+
 .r1 {
 	width: 45px;
 	display: inline-block;
