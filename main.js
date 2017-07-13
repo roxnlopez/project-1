@@ -1,28 +1,29 @@
 console.log("up and running!");
 
-function Player(name){
-	this.name = name;
+//players and gameboard
+function Player(racer, gameboard) {
+	this.racer = racer;
+	this.gameboard = gameboard;
+
+	this.prepare = function() {
+		$(this.racer).css("gameboard", this.gameboard);
+	};
+
+	this.move = function() {
+		$(this.racer).css("margin-left", "+=10%");
+	};
 }
 
+//set up a game function with the players and the field
+function Play() {
+	var field = $('.gameboard');
+	var player1 = new Player($('.r1'), "10%");
+	var player2 = new Player($('.r2'), "10%");
 
-function Game() {
-	var field = document.querySelector(".gameboard");
-	var player1 = new Player(document.querySelector("r1"), "10%");
-	var player2 = new Player(document.querySelector("r2"), "10%");
-	console.log(field);
-	console.log(player1);
-	console.log(player2);
-
+	//set listener
 	this.start = function() {
 		player1.prepare();
 		player2.prepare();
 		setListener();
 	};
 }
-Game();
-
-
-function startGame() {
-	alert("GO!");
-}
-var myTimer = setTimeout(startGame, 3000);
