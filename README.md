@@ -11,3 +11,7 @@ and maybe different sizes of grids
 -bombs randomized
 -forcing both players to move forward with JS (setInterval(stuffToDo, seconds b/n))
 -ok, i just fixed the alignment of my page. I'm starting on my characters...those little fuckers better fit.
+-added plain css
+-got my characters in
+-set timeout for start of game(setInterval kept re-starting and wouldn't shut up)
+-aiming to assign keys to players now.
