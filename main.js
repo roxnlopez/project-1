@@ -31,21 +31,22 @@ function Play() {
 
 	//create the listener and apply keys
 	//var setListener = function() {
+	//set keys so players can move around field
 		$(document).keydown(function(event) {
 			if (event.which == 38) {
-				player1.move(up);
+				key_up = true;
 			} else if (event.which == 37) {
-				player1.move(left);
+				key_left = true;
 			} else if (event.which == 39) {
-				player1.move(right);
+				key_right = true;
 			} 
-
+console.log('hi');
 			if (event.which == 90 ) {
-				player2.move(left);
+				$('#r2').animate({marginLeft: "-=10"});
 			} else if (event.which == 88){
-				player2.move(up);
+				$('#r2').animate({marginUp: "-=10"});
 			} else if (event.which == 67){
-				player2.move(right);
+				$('#r2').animate({marginRight: "-=10"});
 			}
 		
 			//winner declared based on reaching finish line
