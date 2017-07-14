@@ -46,13 +46,16 @@ function Play() {
 				$('#r1').animate({left: "+=10"});
 			} 
 console.log();
+			//z is 90 is left
 			if (event.which == 90 ) {
-				key_left = true;
+				$('#r2').animate({left: "-=10"});
 				//$('#r2').animate({marginLeft: "-=10"});
+			// 88 is x is up	
 			} else if (event.which == 88){
-				key_up = true;
+				$('#r2').animate({top: "-=10"});
+			//67 is c is right	
 			} else if (event.which == 67){
-				key_right = true;
+				$('#r2').animate({left: "+=10"});
 			}
 		
 			//winner declared based on reaching finish line

@@ -28,6 +28,15 @@ h1 {
 	box-sizing: border-box;
 	margin: 10px;
 	background-color: #499167;
+	background-image:url('https://cdn.tutsplus.com/psd/uploads/legacy/001_WebDesignWeek/02_Layout/pattern_14.jpg');
+	background-position: 0px 0px;
+	background-repeat: repeat-x;
+	animation: animatedBackground 13s linear infinite;
+}	
+
+@keyframes animatedBackground {
+	from { background-position: 0 0; }
+	to { background-position: 100% 0; }
 }
 
 .replay {
@@ -81,7 +90,7 @@ h1 {
 	background-size: contain;
 	-webkit-animation: pulsate 60s ease-out;
     -webkit-animation-iteration-count: infinite; 
-    opacity: 0.5
+    opacity: 0.3
 }
 
 @-webkit-keyframes pulsate {
@@ -105,6 +114,7 @@ h1 {
  	background-position: 0 0, 25px 25px;
     background-image: linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black),
                     linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black);
+	opacity: 0.6;                    
 }
 
 .r1 {
