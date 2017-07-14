@@ -1,11 +1,11 @@
 .container {
-	background: url("http://krishnadraws.com/wp-content/uploads/2017/06/post_apocalyptic_sunrise-800x474.jpg") no-repeat;
+	background: url("http://img04.deviantart.net/d05c/i/2013/311/0/1/dark_field_by_lillianevill-d6tcoa5.jpg") no-repeat;
 	background-size: cover;
 }
 
 h1 {
 	font-family: 'Rock Salt', cursive; 
-	font-size: 25px;
+	font-size: 29px;
 	color: #DD0426;
 	text-align: center;
 	display: block;
@@ -33,7 +33,7 @@ h1 {
 .replay {
 	font-family: 'Amatic SC', cursive;
 	color: #252627;
-	background-color: #5BC8AF;
+	background-color: white;
 	display: block;
 	margin: 0 auto;
 	font-size: 20px;
@@ -49,7 +49,7 @@ h1 {
 }
 
 .right {
-	color: #FFE74C;
+	color: black;
 	font-weight: bold;
 	height: 400px;
 	display: inline-block;
@@ -63,7 +63,7 @@ h1 {
 }
 
 .left {
-	color: #FFE74C;
+	color: black;
 	font-weight: bold;
 	display: inline-block;
 	height: 400px;
@@ -77,11 +77,11 @@ h1 {
 }
 
 #pulse {
-	background: url("skull.jpg");
+	background: url("http://www.kaycannon.com/wp-content/uploads/2010/03/warning-landmines-200x300.jpg");
 	background-size: contain;
-	-webkit-animation: pulsate 13s ease-out;
+	-webkit-animation: pulsate 45s ease-out;
     -webkit-animation-iteration-count: infinite; 
-    opacity: 0.0
+    opacity: 0.5
 }
 
 @-webkit-keyframes pulsate {
@@ -91,7 +91,8 @@ h1 {
   }
 
 .finish {
-	color: yellow;
+	color: red;
+	font-weight: bold;
 	font-size: 40px;
 	text-align: center;
 	letter-spacing: 20px; 
@@ -128,7 +129,8 @@ h1 {
 
 footer {
 	display: block;
-	color: blue;
+	color: #DD0426;
+	font-size: 27px;
 	letter-spacing: 2px;
 	text-align: center;
 	font-family: 'Amatic SC', cursive;
