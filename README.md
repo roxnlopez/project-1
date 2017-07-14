@@ -16,3 +16,4 @@ and maybe different sizes of grids
 -set timeout for start of game(setInterval kept re-starting and wouldn't shut up)
 -aiming to assign keys to players now.
 JS is stupid....or my head won't cooperate...jquery instead.
+-fixed the players to move this morning and now they're on strike those little fuckers. Looks pretty good though.

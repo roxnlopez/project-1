@@ -34,10 +34,6 @@ h1 {
 	animation: animatedBackground 30s linear infinite;
 }	
 
-@keyframes animatedBackground {
-	from { background-position: 0 0; }
-	to { background-position: 100% 0; }
-}
 
 .replay {
 	font-family: 'Amatic SC', cursive;
