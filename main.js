@@ -13,6 +13,7 @@ function Player(racer, gameboard) {
 		let actualNumber = parseInt($(this.racer).css("top"));
 		actualNumber -= 10;
 		$(this.racer).css("top", actualNumber);
+		console.log('hi');
 	};
 }
 
@@ -32,21 +33,26 @@ function Play() {
 	//create the listener and apply keys
 	//var setListener = function() {
 	//set keys so players can move around field
+	console.log('hi');
 		$(document).keydown(function(event) {
-			if (event.which == 38) {
-				key_up = true;
-			} else if (event.which == 37) {
-				key_left = true;
-			} else if (event.which == 39) {
-				key_right = true;
+			//38 is up
+			if (event.keyCode == 38) {
+				$('#r1').animate({top: "-=10"});
+			//37 is left	
+			} else if (event.keyCode == 37) {
+				$('#r1').animate({left: "-=10"});
+			//39 is right	
+			} else if (event.keyCode == 39) {
+				$('#r1').animate({left: "+=10"});
 			} 
-console.log('hi');
+console.log();
 			if (event.which == 90 ) {
-				$('#r2').animate({marginLeft: "-=10"});
+				key_left = true;
+				//$('#r2').animate({marginLeft: "-=10"});
 			} else if (event.which == 88){
-				$('#r2').animate({marginUp: "-=10"});
+				key_up = true;
 			} else if (event.which == 67){
-				$('#r2').animate({marginRight: "-=10"});
+				key_right = true;
 			}
 		
 			//winner declared based on reaching finish line
@@ -55,6 +61,7 @@ console.log('hi');
 		      } else if (parseInt($('#r2').css("top")) >= parseInt($('#gameboard').css("top"))) {
 		        	gameOver(player2);
 		      }
+		      console.log('hi');
 		});   
 }
 

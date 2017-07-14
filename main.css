@@ -79,7 +79,7 @@ h1 {
 #pulse {
 	background: url("http://www.kaycannon.com/wp-content/uploads/2010/03/warning-landmines-200x300.jpg");
 	background-size: contain;
-	-webkit-animation: pulsate 45s ease-out;
+	-webkit-animation: pulsate 60s ease-out;
     -webkit-animation-iteration-count: infinite; 
     opacity: 0.5
 }
