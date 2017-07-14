@@ -28,16 +28,17 @@ function Play() {
 	var player2 = new Player('#r2', "10%");
 
 	//set listener
-	this.start = function() {
-		player1.prepare();
-		player2.prepare();
-		setListener();
-	};
+	//this.start = function() {
+	//	player1.prepare();
+	//	player2.prepare();
+	//	setListener();
+	//};
 
 
 	//create the listener and apply keys
 	//var setListener = function() {
 	//set keys so players can move around field
+	console.log('hi');
 		$(document).keydown(function(event) {
 			//38 is up
 			if (event.which == 38) {
