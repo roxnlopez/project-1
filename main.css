@@ -22,11 +22,12 @@ h1 {
 }
 
 .gameboard {
-	height: 400px;
+	height: 410px;
 	display: inline-block;
-	width: 48%;
+	width: 51%;
 	box-sizing: border-box;
 	margin: 10px;
+	margin-left: 13px;
 	background-color: #499167;
 	background-image:url('https://cdn.tutsplus.com/psd/uploads/legacy/001_WebDesignWeek/02_Layout/pattern_14.jpg');
 	background-position: 0px 0px;
@@ -48,17 +49,17 @@ h1 {
 #rules {
 	font-style: italic;
 	font-size: 18px;
-	color: blue;
+	color: red;
 	vertical-align: top;
 	text-align: center;
 }
 
 .right {
-	color: black;
+	color: #02394A;
 	font-weight: bold;
 	height: 400px;
 	display: inline-block;
-	width: 24%;
+	width: 22%;
 	box-sizing: border-box;
 	vertical-align: top;
 	text-align: center;
@@ -72,7 +73,7 @@ h1 {
 	font-weight: bold;
 	display: inline-block;
 	height: 400px;
-	width: 24%;
+	width: 22%;
 	box-sizing: border-box;
 	vertical-align: top;
 	text-align: center;
@@ -97,11 +98,11 @@ h1 {
 
 .finish {
 	color: red;
-	font-weight: bold;
+	font-weight: bolder;
 	font-size: 40px;
 	text-align: center;
 	letter-spacing: 20px; 
-	width: 606px;
+	width: 635px;
 	height: 50px;
 	display: inline-block;
 	margin: 1px;
@@ -110,7 +111,7 @@ h1 {
  	background-position: 0 0, 25px 25px;
     background-image: linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black),
                     linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black);
-	opacity: 0.6;                    
+	opacity: 0.4;                    
 }
 
 .r1 {
