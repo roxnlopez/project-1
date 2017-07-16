@@ -24,8 +24,8 @@ function Player(racer, gameboard) {
 	console.log('hi');
 function Play() {
 	var field = $('.gameboard')[0];
-	var player1 = new Player('#r1', "20%");
-	var player2 = new Player('#r2', "20%");
+	var player1 = new Player('#r1', 1000);
+	var player2 = new Player('#r2', 1000);
 
 	//set listener
 //	this.start = function() {
@@ -71,7 +71,7 @@ function Play() {
 		     
 		//});   
 //}
-	  console.log('sunday');
+	console.log('sunday');
 
 	var gameOver = function(winner) {
 		if(racer > finish) {

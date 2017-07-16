@@ -135,12 +135,3 @@ h1 {
 	position: absolute;
 	padding: 15px;
 }
-
-footer {
-	display: block;
-	color: #DD0426;
-	font-size: 27px;
-	letter-spacing: 2px;
-	text-align: center;
-	font-family: 'Amatic SC', cursive;
-}
