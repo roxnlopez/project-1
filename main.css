@@ -117,7 +117,8 @@ h1 {
 .r1 {
 	width: 45px;
 	display: inline-block;
-	color: blue;
+	color: black;
+	font-weight: bold;
 	top: 78%;
 	left: 30%;
 	position: absolute;
@@ -127,7 +128,8 @@ h1 {
 .r2 {
 	width: 45px;
 	display: inline-block;
-	color: red;
+	color: black;
+	font-weight: bold;
 	top: 78%;
 	left: 60%;
 	position: absolute;

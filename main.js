@@ -6,6 +6,7 @@
 function Player(racer, gameboard) {
 	this.racer = racer;
 	this.gameboard = gameboard;
+	this.finish = finish;
 
 	this.prepare = function() {
 		$(this.racer).css(".gameboard", this.gameboard);
@@ -21,17 +22,17 @@ function Player(racer, gameboard) {
 
 //set up a game function with the players and the field
 	console.log('hi');
-//function Play() {
-//	var field = $('.gameboard')[0];
-//	var player1 = new Player('#r1', "10%");
-//	var player2 = new Player('#r2', "10%");
+function Play() {
+	var field = $('.gameboard')[0];
+	var player1 = new Player('#r1', "20%");
+	var player2 = new Player('#r2', "20%");
 
 	//set listener
 //	this.start = function() {
 //		player1.prepare();
 //		player2.prepare();
 //		setListener();
-//	};
+	}
 
 
 	//create the listener and apply keys
@@ -62,22 +63,26 @@ function Player(racer, gameboard) {
 			}
 	
 			//winner declared based on reaching finish line
-			//if (parseInt($('#r1').css("top")) >= parseInt($('#gameboard').css("top"))) {
-			//		gameOver(player1);
-		    //  } else if (parseInt($('#r2').css("top")) >= parseInt($('#gameboard').css("top"))) {
-		    //   	gameOver(player2);
-		    //  }
+			if (parseInt($('#r1').css("top")) >= parseInt($('#gameboard').css("top"))) {
+					gameOver(player1);
+		      } else if (parseInt($('#r2').css("top")) >= parseInt($('#gameboard').css("top"))) {
+		       		gameOver(player2);
+		      }
 		     
 		//});   
 //}
-	
-//var gameOver = function(winner) {
-	//if(current score > highScore)  {  highScore = current score;  }
-   //if(person presses space)  {  initialize();  }
+	  console.log('sunday');
 
-//	if (confirm("Game Over!" + winner + " wins! Play again.")) {
-//		player1.css("finish", "0%");
-//		player2.css("finish", "0%");
-//	}
+	var gameOver = function(winner) {
+		if(racer > finish) {
+	  	winner = racer;  
+		} 
+
+
+	if (confirm("Game Over!" + winner + " wins! Play again.")) {
+		player1.css(".finish", "50px");
+		player2.css(".finish", "50px");
+	}
+	};
 });
 	console.log("Roxann");
