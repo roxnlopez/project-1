@@ -1,5 +1,5 @@
 .container {
-	background: url("http://img04.deviantart.net/d05c/i/2013/311/0/1/dark_field_by_lillianevill-d6tcoa5.jpg") no-repeat;
+	background: url("http://img04.deviantart.net/d05c/i/2013/311/0/1/dark_field_by_lillianevill-d6tcoa5.jpg");
 	background-size: cover;
 }
 
@@ -12,6 +12,9 @@ h1 {
 	font-style: italic;
 	letter-spacing: 3px;
 	padding: 15px;
+	margin-top: 10px;
+	padding-top: 30px;
+	visibility: hidden;
 }
 
 .button {
@@ -19,12 +22,14 @@ h1 {
 	font-size: 20px;
 	margin: 0 auto;
 	display: block;
+	visibility: hidden;
 }
 
-.gameboard {
+#container2 {
 	height: 410px;
-	display: inline-block;
 	width: 51%;
+	display: inline-block;
+	left: 0%;
 	box-sizing: border-box;
 	margin: 10px;
 	margin-left: 13px;
@@ -32,7 +37,7 @@ h1 {
 	background-image:url('https://cdn.tutsplus.com/psd/uploads/legacy/001_WebDesignWeek/02_Layout/pattern_14.jpg');
 	background-position: 0px 0px;
 	background-repeat: repeat-x;
-	animation: animatedBackground 30s linear infinite;
+	opacity: 0.7;
 }	
 
 
@@ -44,6 +49,8 @@ h1 {
 	margin: 0 auto;
 	font-size: 20px;
 	margin-bottom: 10px;
+	padding-bottom: 30px;
+	visibility: hidden;
 }
 
 #rules {
@@ -55,7 +62,7 @@ h1 {
 }
 
 .right {
-	color: #02394A;
+	color: #2C2C34;
 	font-weight: bold;
 	height: 400px;
 	display: inline-block;
@@ -66,13 +73,14 @@ h1 {
 	margin-top: 10px;
 	background-color: #6E8898;
 	font-size: 18px;
+	opacity: .6;
 }
 
 .left {
-	color: black;
+	color: #2C2C34;
 	font-weight: bold;
-	display: inline-block;
 	height: 400px;
+	display: inline-block;
 	width: 22%;
 	box-sizing: border-box;
 	vertical-align: top;
@@ -80,21 +88,8 @@ h1 {
 	margin-top: 10px;
 	background-color: #6E8898;
 	font-size: 18px;
+	opacity: .6;
 }
-
-#pulse {
-	background: url("http://www.kaycannon.com/wp-content/uploads/2010/03/warning-landmines-200x300.jpg");
-	background-size: contain;
-	-webkit-animation: pulsate 60s ease-out;
-    -webkit-animation-iteration-count: infinite; 
-    opacity: 0.3
-}
-
-@-webkit-keyframes pulsate {
-    0% {-webkit-transform: scale(0.1, 0.1); opacity: 0.0;}
-    50% {opacity: 1.0;}
-    100% {-webkit-transform: scale(1.2, 1.2); opacity: 0.0;}
-  }
 
 .finish {
 	color: red;
@@ -102,7 +97,7 @@ h1 {
 	font-size: 40px;
 	text-align: center;
 	letter-spacing: 20px; 
-	width: 635px;
+	width: 643px;
 	height: 50px;
 	display: inline-block;
 	margin: 1px;
@@ -111,27 +106,29 @@ h1 {
  	background-position: 0 0, 25px 25px;
     background-image: linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black),
                     linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black);
-	opacity: 0.4;                    
+	opacity: 0.7;                    
 }
 
 .r1 {
 	width: 45px;
 	display: inline-block;
+	position: absolute;
+	top: 550px;
+	left: 30%;
 	color: black;
 	font-weight: bold;
-	top: 78%;
-	left: 30%;
-	position: absolute;
 	padding: 15px;
 }
 
 .r2 {
 	width: 45px;
 	display: inline-block;
-	color: black;
-	font-weight: bold;
-	top: 78%;
+	top: 550px;
 	left: 60%;
 	position: absolute;
+	color: black;
+	font-weight: bold;
 	padding: 15px;
 }
+
+
