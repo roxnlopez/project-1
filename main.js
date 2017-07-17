@@ -62,11 +62,11 @@ function Player(racer, gameboard) {
 			}
 	
 			//winner declared based on reaching finish line
-			//if (parseInt($('#r1').css("top")) >= parseInt($('#gameboard').css("top"))) {
-			//		gameOver(player1);
-		    //  } else if (parseInt($('#r2').css("top")) >= parseInt($('#gameboard').css("top"))) {
-		    //   	gameOver(player2);
-		    //  }
+			if (parseInt($('#r1').css("top")) > parseInt($('#gameboard').css("top"))) {
+					gameOver(player1);
+		      } else if (parseInt($('#r2').css("top")) > parseInt($('#gameboard').css("top"))) {
+		       	gameOver(player2);
+		      }
 		     
 		//});   
 //}

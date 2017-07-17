@@ -4,12 +4,14 @@
 	<title>PROJECT1</title>
 	<link href="https://fonts.googleapis.com/css?family=Rock+Salt|Shadows+Into+Light" rel="stylesheet">
 	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" media="screen and (min-width: 320px) and (max-width:1023px)" href="main.css">
 </head>
 <body>
 	<div class="container" id="container1">
+		<h1>Hello</h1>
 		<div class="score">
 		<p>Score:</p><span id="score"></span>
-		<p id="rules">Rules: Make it across the field, <br>in one piece.<br>Remember, landmines are sprinkled <br>from here to the city.</p>
+		<p id="rules">Rule 1: Make it across the field. <br> Rule 2: No boundaries, just get Home. <br> Rule 3: There's no score.</p>
 		</div>
 		<div id="container2" class="gameboard">
 			<div class="finish">HOME</div>
@@ -19,12 +21,13 @@
 		<div id="replay_div">
 			<button id="replay">Play Again</button>
 		</div>
+		<footer>Goodbye</footer>
 	</div>
-
 	
 	<script
 	  src="https://code.jquery.com/jquery-3.2.1.min.js"
 	  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
 	  crossorigin="anonymous"></script>
 	  <script src="main.js"></script>
+</body>
 </html>

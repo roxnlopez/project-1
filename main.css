@@ -1,47 +1,50 @@
+body {
+	height: 100%;
+	width: 100%;
+}
+
 .container {
 	background: url("http://img04.deviantart.net/d05c/i/2013/311/0/1/dark_field_by_lillianevill-d6tcoa5.jpg");
 	background-size: cover;
+	background-repeat: no-repeat;
 }
-
 h1 {
-	font-family: 'Rock Salt', cursive; 
-	font-size: 29px;
-	color: #DD0426;
-	text-align: center;
-	display: block;
-	font-style: italic;
-	letter-spacing: 3px;
-	padding: 15px;
-	margin-top: 10px;
-	padding-top: 30px;
+	margin: 20px;
+	padding: 10px;
 	visibility: hidden;
 }
 
-.button {
-	font-family: 'Amatic SC', cursive;
-	font-size: 20px;
-	margin: 0 auto;
-	display: block;
-	visibility: hidden;
-}
-
-#container2 {
+.gameboard {
 	height: 410px;
 	width: 51%;
 	display: inline-block;
-	left: 0%;
 	box-sizing: border-box;
 	margin: 10px;
-	margin-left: 13px;
+	margin-left: 60px;
 	background-color: #499167;
 	background-image:url('https://cdn.tutsplus.com/psd/uploads/legacy/001_WebDesignWeek/02_Layout/pattern_14.jpg');
 	background-position: 0px 0px;
 	background-repeat: repeat-x;
-	opacity: 0.7;
+	opacity: 0.6;
 }	
 
+.score {
+	color: #2C2C34;
+	font-weight: bold;
+	height: 400px;
+	display: inline-block;
+	width: 22%;
+	box-sizing: border-box;
+	margin-left: 60px;
+	vertical-align: top;
+	text-align: center;
+	margin-top: 10px;
+	background-color: #6E8898;
+	font-size: 18px;
+	opacity: .6;
+}
 
-.replay {
+#replay {
 	font-family: 'Amatic SC', cursive;
 	color: #252627;
 	background-color: white;
@@ -59,36 +62,7 @@ h1 {
 	color: red;
 	vertical-align: top;
 	text-align: center;
-}
-
-.right {
-	color: #2C2C34;
-	font-weight: bold;
-	height: 400px;
-	display: inline-block;
-	width: 22%;
-	box-sizing: border-box;
-	vertical-align: top;
-	text-align: center;
-	margin-top: 10px;
-	background-color: #6E8898;
-	font-size: 18px;
-	opacity: .6;
-}
-
-.left {
-	color: #2C2C34;
-	font-weight: bold;
-	height: 400px;
-	display: inline-block;
-	width: 22%;
-	box-sizing: border-box;
-	vertical-align: top;
-	text-align: center;
-	margin-top: 10px;
-	background-color: #6E8898;
-	font-size: 18px;
-	opacity: .6;
+	padding-top: 30px;
 }
 
 .finish {
@@ -113,8 +87,8 @@ h1 {
 	width: 45px;
 	display: inline-block;
 	position: absolute;
-	top: 550px;
-	left: 30%;
+	top: 440px;
+	left: 40%;
 	color: black;
 	font-weight: bold;
 	padding: 15px;
@@ -123,12 +97,41 @@ h1 {
 .r2 {
 	width: 45px;
 	display: inline-block;
-	top: 550px;
-	left: 60%;
+	top: 440px;
+	left: 65%;
 	position: absolute;
 	color: black;
 	font-weight: bold;
 	padding: 15px;
 }
 
+.button {
+	font-family: 'Amatic SC', cursive;
+	font-size: 20px;
+	margin: 0 auto;
+	display: block;
+}
 
+footer {
+	margin: 30px;
+	padding: 15px;
+	visibility: hidden;
+}
+
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 767px) {
+	body {
+		background: none;
+		font-size: 15px;
+	}
+}
+
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1023px) {
+	body {
+		background: none;
+		font-size: 12px;
+	}
+	}
