@@ -1,67 +1,56 @@
 .container {
 	background: url("http://img04.deviantart.net/d05c/i/2013/311/0/1/dark_field_by_lillianevill-d6tcoa5.jpg");
 	background-size: cover;
-	position: relative;
-	height: 95vh;
 }
 
-body {
-	height: 100%;
-	width: 100%;
-	margin: 0;
+h1 {
+	font-family: 'Rock Salt', cursive; 
+	font-size: 29px;
+	color: #DD0426;
+	text-align: center;
+	display: block;
+	font-style: italic;
+	letter-spacing: 3px;
+	padding: 15px;
+	margin-top: 10px;
+	padding-top: 30px;
+	visibility: hidden;
 }
 
-.mine {
-	position: absolute;
-	height: 150px;
-	width: 3%;
-	margin-left: 48%;
-	background-color: rgba(255,255,255,0.5);
-}
-
-#mine_1 {
-	top: -150px;
-}
-
-#mine_2 {
-	top: 150px;
-}
-
-#mine_3 {
-	top: 450px;
+.button {
+	font-family: 'Amatic SC', cursive;
+	font-size: 20px;
+	margin: 0 auto;
+	display: block;
+	visibility: hidden;
 }
 
 #container2 {
-	height: 470px;
-	width: 65%;
+	height: 410px;
+	width: 51%;
 	display: inline-block;
+	left: 0%;
 	box-sizing: border-box;
-	margin: 20px;
-	margin-bottom: 30px;
+	margin: 10px;
+	margin-left: 13px;
 	background-color: #499167;
 	background-image:url('https://cdn.tutsplus.com/psd/uploads/legacy/001_WebDesignWeek/02_Layout/pattern_14.jpg');
+	background-position: 0px 0px;
 	background-repeat: repeat-x;
 	opacity: 0.7;
 }	
 
-#replay_div {
-	position: absolute;
-	height: 100%;
-	width: 100%;
-	text-align: center;
-	display: none;
-}
 
 .replay {
-	border: none;
-	padding: 25px;
 	font-family: 'Amatic SC', cursive;
 	color: #252627;
 	background-color: white;
 	display: block;
 	margin: 0 auto;
-	font-size: 40px;
-	margin-top: 30%;
+	font-size: 20px;
+	margin-bottom: 10px;
+	padding-bottom: 30px;
+	visibility: hidden;
 }
 
 #rules {
@@ -72,19 +61,34 @@ body {
 	text-align: center;
 }
 
-.score {
+.right {
 	color: #2C2C34;
 	font-weight: bold;
+	height: 400px;
 	display: inline-block;
-	width: 20%;
-	margin-top: 5%;
-	margin-left: 5px;
-	padding: 10px;
+	width: 22%;
+	box-sizing: border-box;
+	vertical-align: top;
+	text-align: center;
+	margin-top: 10px;
 	background-color: #6E8898;
 	font-size: 18px;
-	box-shadow: 4px 4px 0px 1px #5F8898;
 	opacity: .6;
+}
 
+.left {
+	color: #2C2C34;
+	font-weight: bold;
+	height: 400px;
+	display: inline-block;
+	width: 22%;
+	box-sizing: border-box;
+	vertical-align: top;
+	text-align: center;
+	margin-top: 10px;
+	background-color: #6E8898;
+	font-size: 18px;
+	opacity: .6;
 }
 
 .finish {
@@ -93,7 +97,7 @@ body {
 	font-size: 40px;
 	text-align: center;
 	letter-spacing: 20px; 
-	width: 830px;
+	width: 643px;
 	height: 50px;
 	display: inline-block;
 	margin: 1px;
@@ -110,7 +114,7 @@ body {
 	display: inline-block;
 	position: absolute;
 	top: 550px;
-	left: 40%;
+	left: 30%;
 	color: black;
 	font-weight: bold;
 	padding: 15px;
@@ -120,7 +124,7 @@ body {
 	width: 45px;
 	display: inline-block;
 	top: 550px;
-	left: 70%;
+	left: 60%;
 	position: absolute;
 	color: black;
 	font-weight: bold;
