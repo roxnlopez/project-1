@@ -58,11 +58,11 @@ h1 {
 
 #rules {
 	font-style: italic;
-	font-size: 18px;
-	color: red;
+	font-size: 20px;
+	color: black;
 	vertical-align: top;
 	text-align: center;
-	padding-top: 30px;
+	padding-top: 40px;
 }
 
 .finish {
@@ -87,25 +87,40 @@ h1 {
 }
 
 .r1 {
-	width: 45px;
+
 	display: inline-block;
 	position: absolute;
 	top: 440px;
 	left: 40%;
-	color: black;
-	font-weight: bold;
-	padding: 15px;
+	width: 0px;
+	height: 0px;
+	border-right: 60px solid transparent;
+	border-top: 60px solid yellow;
+	border-left: 60px solid yellow;
+	border-bottom: 60px solid yellow;
+	border-top-left-radius: 60px;
+	border-top-right-radius: 60px;
+	border-bottom-left-radius: 60px;
+	border-bottom-right-radius: 60px;
+
 }
 
 .r2 {
-	width: 45px;
+
 	display: inline-block;
 	top: 440px;
 	left: 65%;
 	position: absolute;
-	color: black;
-	font-weight: bold;
-	padding: 15px;
+	width: 0px;
+	height: 0px;
+	border-right: 60px solid transparent;
+	border-top: 60px solid blue;
+	border-left: 60px solid blue;
+	border-bottom: 60px solid blue;
+	border-top-left-radius: 60px;
+	border-top-right-radius: 60px;
+	border-bottom-left-radius: 60px;
+	border-bottom-right-radius: 60px;
 }
 
 .button {

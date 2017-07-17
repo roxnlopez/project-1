@@ -66,20 +66,21 @@ function Player(racer, gameboard) {
 			//winner declared based on reaching finish line
 			//try less than
 			//remember top, left, right(left + wdith of gameboard)
-			//if event.which = up then win
-			//if(event.which === 38 || event.which === 88) {
-
-
+				
 		console.log(parseInt($('#r1').css("top")));
 		console.log(parseInt($('#finish').css("top")));
 				if (parseInt($('#r1').css("top")) < parseInt($('#finish').css("top"))) {
-					alert("Player1 wins the race!");
+					alert("You win the race!");
 				//		gameOver(player1);
 			      } else if (parseInt($('#r2').css("top")) < parseInt($('#finish').css("top"))) {
-			      	alert("Player2 wins the race!");
+			      	alert("You win the race!");
 			      // 	gameOver(player2);
 			      //}
 		      }
+		      //if event.which = up then win
+			if(event.which === 38 || event.which === 88 < parseInt($('#finish').css("top"))) {
+				e.preventDefault();
+			}	
 		     
 		//});   
 //}
