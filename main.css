@@ -71,7 +71,10 @@ h1 {
 	font-size: 40px;
 	text-align: center;
 	letter-spacing: 20px; 
-	width: 643px;
+	position: absolute;
+	top: 15%;
+	left: 32%;
+	width: 651px;
 	height: 50px;
 	display: inline-block;
 	margin: 1px;
@@ -134,4 +137,4 @@ and (max-device-width: 1023px) {
 		background: none;
 		font-size: 12px;
 	}
-	}
+}

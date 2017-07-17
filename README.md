@@ -19,3 +19,4 @@ JS is stupid....or my head won't cooperate...jquery instead.
 -fixed the players to move this morning and now they're on strike those little fuckers. Looks pretty good though.
 -scrapped the mines. let's just move the pinky toe....get the players to stay on their damn field.
 -added media queries
+-finally got the players to get to finish line and win. Now just to get the page to only alert for up button.

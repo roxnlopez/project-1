@@ -33,6 +33,8 @@ function Player(racer, gameboard) {
 //		setListener();
 //	};
 
+//everytime i move player, current values, need to know gameboard dimensions 
+
 
 	//create the listener and apply keys
 	//var setListener = function() {
@@ -40,32 +42,43 @@ function Player(racer, gameboard) {
 		$(document).keydown(function(event) {
 			//38 is up
 			if (event.which == 38) {
-				$('#r1').stop(true).animate({"top": "-=10px"});
+				$('#r1').stop(true).animate({"top": "-=20px"});
 			//37 is left	
 			} else if (event.which == 37) {
-				$('#r1').stop(true).animate({"left": "-=10px"});
+				$('#r1').stop(true).animate({"left": "-=20px"});
 			//39 is right	
 			} else if (event.which == 39) {
-				$('#r1').stop(true).animate({"left": "+=10px"});
+				$('#r1').stop(true).animate({"left": "+=20px"});
 			} 
 
 			//z is 90 is left
 			if (event.which == 90 ) {
-				$('#r2').stop(true).animate({left: "-=10"});
+				$('#r2').stop(true).animate({left: "-=20"});
 				//$('#r2').animate({marginLeft: "-=10"});
 			// 88 is x is up	
 			} else if (event.which == 88){
-				$('#r2').stop(true).animate({top: "-=10"});
+				$('#r2').stop(true).animate({top: "-=20"});
 			//67 is c is right	
 			} else if (event.which == 67){
-				$('#r2').stop(true).animate({left: "+=10"});
+				$('#r2').stop(true).animate({left: "+=20"});
 			}
 	
 			//winner declared based on reaching finish line
-			if (parseInt($('#r1').css("top")) > parseInt($('#gameboard').css("top"))) {
-					gameOver(player1);
-		      } else if (parseInt($('#r2').css("top")) > parseInt($('#gameboard').css("top"))) {
-		       	gameOver(player2);
+			//try less than
+			//remember top, left, right(left + wdith of gameboard)
+			//if event.which = up then win
+			//if(event.which === 38 || event.which === 88) {
+
+
+		console.log(parseInt($('#r1').css("top")));
+		console.log(parseInt($('#finish').css("top")));
+				if (parseInt($('#r1').css("top")) < parseInt($('#finish').css("top"))) {
+					alert("Player1 wins the race!");
+				//		gameOver(player1);
+			      } else if (parseInt($('#r2').css("top")) < parseInt($('#finish').css("top"))) {
+			      	alert("Player2 wins the race!");
+			      // 	gameOver(player2);
+			      //}
 		      }
 		     
 		//});   
