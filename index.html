@@ -7,20 +7,28 @@
 	<link rel="stylesheet" media="screen and (min-width: 320px) and (max-width:1023px)" href="main.css">
 </head>
 <body>
+	<! -- add container for whole page styling -- >
 	<div class="container" id="container1">
+
 		<h1>Hello</h1>
+	<! -- score not working yet...hide for now until functional later -->
 		<div class="score">
-		
-		<p id="rules">Rule 1: Make it across the field. <br> Rule 2: There's no score, <br>but there is a winner.</p>
+
+	<! -- add styling to this column later -- >	
+		<p id="rules">Left Player Keys: Left, Up, Right <br> Right Player Keys: Z, X C <br> Rule 1: Make it across the field. <br> Rule 2: There's no score, <br>but there is a winner.</p>
 		</div>
+	<! -- this works finally...just needs some left/right boundaries and styling/animation -- >
 		<div id="container2" class="gameboard">
 			<div id="finish" class="finish">HOME</div>
 			<div id="r1" class="r1"></div>
 			<div id="r2" class="r2"></div>
 		</div>
+
+	<! -- replay button not function right now...unhide when working -- >	
 		<div id="replay_div">
 			<button id="replay">Play Again</button>
 		</div>
+	<! --  hidden at the moment, need to figure out spacing without footer -->	
 		<footer>Goodbye</footer>
 	</div>
 	
