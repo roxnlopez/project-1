@@ -15,14 +15,13 @@ h1 {
 }
 
 .gameboard {
-	height: 410px;
+	height: 430px;
 	width: 51%;
 	display: inline-block;
 	box-sizing: border-box;
 	margin: 10px;
 	margin-left: 60px;
-	background-color: #499167;
-	background-image:url('https://cdn.tutsplus.com/psd/uploads/legacy/001_WebDesignWeek/02_Layout/pattern_14.jpg');
+	background-color: #26413C;
 	background-position: 0px 0px;
 	background-repeat: repeat-x;
 	opacity: 0.6;
@@ -31,14 +30,15 @@ h1 {
 .score {
 	color: #2C2C34;
 	font-weight: bold;
-	height: 400px;
+	height: 200px;
 	display: inline-block;
 	width: 22%;
 	box-sizing: border-box;
 	margin-left: 60px;
 	vertical-align: top;
 	text-align: center;
-	margin-top: 10px;
+	margin-top: 30px;
+	padding-top: 15px;
 	background-color: #6E8898;
 	font-size: 18px;
 	opacity: .6;
@@ -59,7 +59,7 @@ h1 {
 #rules {
 	font-style: italic;
 	font-size: 20px;
-	color: black;
+	color: #1A1D1A;
 	vertical-align: top;
 	text-align: center;
 	padding-top: 40px;
@@ -102,7 +102,6 @@ h1 {
 	border-top-right-radius: 60px;
 	border-bottom-left-radius: 60px;
 	border-bottom-right-radius: 60px;
-
 }
 
 .r2 {
