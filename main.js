@@ -42,25 +42,25 @@ function Player(racer, gameboard) {
 		$(document).keydown(function(event) {
 			//38 is up
 			if (event.which == 38) {
-				$('#r1').stop(true).animate({"top": "-=20px"});
+				$('#r1').stop(true).animate({"top": "-=40px"});
 			//37 is left	
 			} else if (event.which == 37) {
-				$('#r1').stop(true).animate({"left": "-=20px"});
+				$('#r1').stop(true).animate({"left": "-=40px"});
 			//39 is right	
 			} else if (event.which == 39) {
-				$('#r1').stop(true).animate({"left": "+=20px"});
+				$('#r1').stop(true).animate({"left": "+=40px"});
 			} 
 
 			//z is 90 is left
 			if (event.which == 90 ) {
-				$('#r2').stop(true).animate({left: "-=20"});
+				$('#r2').stop(true).animate({left: "-=40"});
 				//$('#r2').animate({marginLeft: "-=10"});
 			// 88 is x is up	
 			} else if (event.which == 88){
-				$('#r2').stop(true).animate({top: "-=20"});
+				$('#r2').stop(true).animate({top: "-=40"});
 			//67 is c is right	
 			} else if (event.which == 67){
-				$('#r2').stop(true).animate({left: "+=20"});
+				$('#r2').stop(true).animate({left: "+=40"});
 			}
 	
 			//winner declared based on reaching finish line
@@ -71,17 +71,20 @@ function Player(racer, gameboard) {
 		console.log(parseInt($('#finish').css("top")));
 				if (parseInt($('#r1').css("top")) < parseInt($('#finish').css("top"))) {
 					alert("Player1 wins the race!");
+			//now my page reloads		
+					window.location.reload(true); 
 				//		gameOver(player1);
 			      } else if (parseInt($('#r2').css("top")) < parseInt($('#finish').css("top"))) {
 			      	alert("Player2 wins the race!");
+			      	window.location.reload(true); 
 			      // 	gameOver(player2);
 			      //}
+
 		      }
+		    
 		      //if event.which = up then win
-			if(event.which === 38 || event.which === 88 < parseInt($('#finish').css("top"))) {
-				e.preventDefault();
-			}	
-		     
+			//if(event.which === 38 || event.which === 88 < parseInt($('#finish').css("top"))) {
+
 		//});   
 //}
 	
