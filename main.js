@@ -1,11 +1,11 @@
     console.log( "ready!" );
 //get start button to start game
-
-
 //players and gameboard
 function Player(racer, gameboard) {
 	this.racer = racer;
 	this.gameboard = gameboard;
+	this.timerVar = setInterval(countTimer, 1000);
+	var totalSeconds = 0;
 
 	this.prepare = function() {
 		$(this.racer).css(".gameboard", this.gameboard);
@@ -18,24 +18,36 @@ function Player(racer, gameboard) {
 	};
 }
  	console.log(Player);
-
 //set up a game function with the players and the field
 	console.log('hi');
 //function Play() {
 //	var field = $('.gameboard')[0];
 //	var player1 = new Player('#r1', "10%");
 //	var player2 = new Player('#r2', "10%");
-
 	//set listener
 //	this.start = function() {
 //		player1.prepare();
 //		player2.prepare();
 //		setListener();
 //	};
-
+		function clock() {
+			$('body').prepend('#.game');
+			var totalSeconds = 0;
+			setInterval(setTime, 1000);
+			function setTime() {
+				++totalSeconds;
+				$('#clock > seconds').html(pad(totalSeconds%60));
+			}
+		function pad(val) {
+			var valString = val + "";
+				if(valString.length < 2) {
+					return "0" + valString;
+				} else {
+					return valString;
+				}
+		}
+		}
 //everytime i move player, current values, need to know gameboard dimensions 
-
-
 	//create the listener and apply keys
 	//var setListener = function() {
 	//set keys so players can move around field
@@ -79,12 +91,10 @@ function Player(racer, gameboard) {
 			      	window.location.reload(true); 
 			      // 	gameOver(player2);
 			      //}
-
 		      }
 		    
-		      //if event.which = up then win
-			//if(event.which === 38 || event.which === 88 < parseInt($('#finish').css("top"))) {
-
+		      	//if event.which = up then win
+				//if(event.which === 38 || event.which === 88 < parseInt($('#finish').css("top"))) {
 		//});   
 //}
 	
