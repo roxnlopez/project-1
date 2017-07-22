@@ -15,45 +15,48 @@ h1 {
 }
 
 .gameboard {
-	height: 430px;
+	height: 460px;
 	width: 51%;
 	display: inline-block;
 	box-sizing: border-box;
 	margin: 10px;
-	margin-left: 60px;
+	margin-left: 1%;
 	background-color: #26413C;
 	background-position: 0px 0px;
 	background-repeat: repeat-x;
 	opacity: 0.6;
 }	
 
-.score {
+.lColumn {
 	color: #2C2C34;
 	font-weight: bold;
 	height: 200px;
 	display: inline-block;
 	width: 22%;
 	box-sizing: border-box;
-	margin-left: 60px;
+	margin-left: .8%;
 	vertical-align: top;
 	text-align: center;
-	margin-top: 20px;
+	margin-top: 8px;
 	padding-top: 5px;
 	background-color: #6E8898;
 	font-size: 18px;
 	opacity: .6;
 }
 
-#replay {
+#start {
 	font-family: 'Amatic SC', cursive;
 	color: #252627;
 	background-color: white;
-	display: block;
-	margin: 0 auto;
 	font-size: 20px;
-	margin-bottom: 10px;
-	padding-bottom: 30px;
-	visibility: hidden;
+	opacity: .4;
+	display: inline-block;
+	height: 200px;
+	width: 22%;
+	margin-left: 76%;
+	margin-top: -38%;
+	vertical-align: top;
+	box-sizing: border-box;
 }
 
 #rules {
@@ -73,8 +76,8 @@ h1 {
 	letter-spacing: 20px; 
 	position: absolute;
 	top: 15%;
-	left: 32%;
-	width: 651px;
+	left: 25%;
+	width: 640px;
 	height: 50px;
 	display: inline-block;
 	margin: 1px;
@@ -90,43 +93,47 @@ h1 {
 
 	display: inline-block;
 	position: absolute;
-	top: 440px;
-	left: 40%;
+	top: 80%;
+	left: 35%;
 	width: 0px;
 	height: 0px;
-	border-right: 60px solid transparent;
-	border-top: 60px solid yellow;
-	border-left: 60px solid yellow;
-	border-bottom: 60px solid yellow;
-	border-top-left-radius: 60px;
-	border-top-right-radius: 60px;
-	border-bottom-left-radius: 60px;
-	border-bottom-right-radius: 60px;
+	border-right: 20px solid transparent;
+	border-top: 20px solid yellow;
+	border-left: 20px solid yellow;
+	border-bottom: 20px solid yellow;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
 }
 
 .r2 {
 
 	display: inline-block;
-	top: 440px;
-	left: 65%;
+	top: 80%;
+	left: 60%;
 	position: absolute;
 	width: 0px;
 	height: 0px;
-	border-right: 60px solid transparent;
-	border-top: 60px solid blue;
-	border-left: 60px solid blue;
-	border-bottom: 60px solid blue;
-	border-top-left-radius: 60px;
-	border-top-right-radius: 60px;
-	border-bottom-left-radius: 60px;
-	border-bottom-right-radius: 60px;
+	border-right: 20px solid transparent;
+	border-top: 20px solid blue;
+	border-left: 20px solid blue;
+	border-bottom: 20px solid blue;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
 }
 
-.button {
-	font-family: 'Amatic SC', cursive;
-	font-size: 20px;
-	margin: 0 auto;
-	display: block;
+#timer {
+	color: red;
+	font-size: 2em;
+	display: inline-block;
+	width: 22%;
+	margin-left: 83%;
+	margin-top: -38%;
+	vertical-align: top;
+	box-sizing: border-box;
 }
 
 footer {
