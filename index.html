@@ -12,18 +12,20 @@
 		<h1>Hello</h1>
 		<div class="lColumn">
 		<! -- add styling to this column later -- >	
-			<p id="rules">Left Player Keys: Left, Up, Right <br> Right Player Keys: Z, X C <br> Rule 1: Make it across the field. <br> Rule 2: There's no score, <br>but there is a winner.</p>
+			<p id="rules">Left Player Keys: Left, Up, Right <br> Right Player Keys: Z, X C </p><p id="rules"><br> Rule 1: Make it across the field, to the finish line. <br> Rule 2: Beat your opponent <br>and the timer.</p>
 		</div>
 		<! -- this works finally...just needs some left/right boundaries and styling/animation -- >
 		<div id="container2" class="gameboard">
-			<div id="finish" class="finish">HOME</div>
+			<div id="finish" class="finish"></div>
 			<div id="r1" class="r1"></div>
 			<div id="r2" class="r2"></div>
+			<div class="winner"></div>
 		</div>
 		<! -- not needed. used window.location.reload instead -- >
 		<div>
-			<button id="start">Start</button>
-			<p id="timer"></p>
+			<button id="start"></button>
+			<p id="timer" class="count"></p>
+			<div class="refresh"></div>
 		</div>
 		<! --  hidden at the moment, need to figure out spacing without footer -->	
 		<footer>Goodbye</footer>
