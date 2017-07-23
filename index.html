@@ -7,9 +7,10 @@
 	<link rel="stylesheet" media="screen and (min-width: 320px) and (max-width:1023px)" href="main.css">
 </head>
 <body>
-		<! -- add container for whole page styling -- >
+	<! -- add container for whole page styling -- >
 	<div class="container" id="container1">
-		<h1>Hello</h1>
+		<h1>Pacman Racing</h1>
+		<div id="new-game">	
 		<div class="lColumn">
 		<! -- add styling to this column later -- >	
 			<p id="rules">Left Player Keys: Left, Up, Right <br> Right Player Keys: Z, X C </p><p id="rules"><br> Rule 1: Make it across the field, to the finish line. <br> Rule 2: Beat your opponent <br>and the timer.</p>
@@ -23,10 +24,11 @@
 		</div>
 		<! -- not needed. used window.location.reload instead -- >
 		<div>
-			<button id="start"></button>
-			<p id="timer" class="count"></p>
-			<div class="refresh"></div>
-		</div>
+			<button id="start" class="start-game">Timer:</button>
+			<p id="timer" class="seconds"></p>
+			<div class="minutes"></div>
+		</div> <! -- button, start -- >
+		</div> <! -- new-game -->
 		<! --  hidden at the moment, need to figure out spacing without footer -->	
 		<footer>Goodbye</footer>
 	</div>
