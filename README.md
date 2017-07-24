@@ -2,14 +2,14 @@ For my project, I am thinking of something similar to the racer game. But maybe,
 <a href="file:///Users/roxannnlopez/Documents/Fundamentals/project-1/index.html"/>
 Trello: https://trello.com/b/g3q2QUdr/project-1
 <img src="Wireframe.jpg">
-####### IDEAS:
+<br>####### IDEAS:
 -think about difficulty level or just one level of ease(?) OR OR OOORRR different amounts of time. 10sec 30sec 45 sec 
 and maybe different sizes of grids
 -Game: timer, reset
 -Board: draw board out, gameOver
 -Field: element, x, y, flagged, revealed
 -both players go at same time/both want to reach finish
-#######Functionality:
+<br>#######Functionality:
 -forcing both players to move forward with JS (setInterval(stuffToDo, seconds b/n))
 -ok, i just fixed the alignment of my page. I'm starting on my characters...chose pacman to save time on sprites.
 -added plain css
@@ -26,5 +26,5 @@ JS is stupid....or my head won't cooperate...jquery instead.
 -remember to add in a link to the game page at the top of the readme.
 -looking into multiple rounds for game.
 -working on getting my timer to work...keeps re-setting...or getting the setInternval to bring up a timer. weird stuff going on.
-########## PHASE II
+<br>########## PHASE II
 In the next phase, I would like to get the timer to stop resetting every time a button is pushed and also add in more rounds.
