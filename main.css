@@ -127,14 +127,22 @@ h1 {
 	border-bottom-right-radius: 20px;
 }
 
-#timer {
+#demo {
 	color: red;
 	font-size: 2em;
+	display: block;
+	text-align: center;
+}
+
+#timer {
+	color: #444;
+	font-size: 2em;
 	display: inline-block;
-	width: 22%;
-	margin-left: 87%;
-	margin-top: -32%;
+	width: 20%;
+	margin-left: 77%;
+	margin-top: -41%;
 	vertical-align: top;
+	height: 50px;
 	box-sizing: border-box;
 }
 

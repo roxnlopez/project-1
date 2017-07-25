@@ -8,9 +8,42 @@ function Game(playerOne, playerTwo) { //set beginning variables
 	var game = newGame();
 }
 
-function Player(playerName, score) { 
+function player(playerName, score) { 
 	this.playerName = playerName;
 	this.score = 0;
+}
+
+//set countdown to initialize when page loads with message displayed
+function myFunction() {
+	setTimeout(function() {
+		newFunction("On Your Marks!");
+	}, 1000);
+	setTimeout(function() {
+		newFunction("Get Set!");
+	}, 2000);
+	setTimeout(function() {
+		newFunction("GO!");
+		beginRound();
+	}, 3000);
+
+}
+
+function newFunction(input) {
+	document.getElementById("demo").innerHTML = input;
+}
+
+function beginRound() {
+	var timer = 10;
+    var myint = setInterval(function(){ 
+        //timer going down by one
+    	timer--;
+        //changing innerHTML to timer
+        document.getElementById("demo").innerHTML = timer;
+    	//if timer equals 0, clear Interval
+        if (timer == 0) {
+        	clearInterval(myint);
+		}	
+    }, 1000);
 }
 
 console.log(Game);
@@ -39,16 +72,15 @@ $(document).keydown(function(event) {
 	}
 
 //game timer to run 60 seconds  
-var sec = 0;
-function pad ( val ) { return val > 3 ? val : "0" + val; }
-setInterval(function(){
-    $(".seconds").html(pad(++sec%60));
-    $("#minutes").html(pad(parseInt(sec/60,10)));
-}, 1000);
-var timer = setInterval ( function(){
-	console.log("next round");
-}, 1000 );
-clearInterval ( timer );
-
-	console.log(timer);
+// var sec = 0;
+// function pad ( val ) { return val > 3 ? val : "0" + val; }
+// setInterval(function(){
+//     $(".seconds").html(pad(++sec%60));
+//     $("#minutes").html(pad(parseInt(sec/60,10)));
+// }, 1000);
+// var timer = setInterval ( function(){
+// 	console.log("next round");
+// }, 1000 );
+// clearInterval ( timer );
+console.log(timer);
 });
