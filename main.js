@@ -3,13 +3,15 @@ console.log( "ready!" );
 var score1 = 0;
 var score2 = 0;
 var round = 1;
+var winner1 = "Player 1 wins this round!";
+var winner2 = "Player 2 wins this round!";
 
 
 //set countdown to initialize when page loads with message displayed
 function myFunction() {
 	setTimeout(function() {
 		newFunction("On Your Marks!");
-	}, 1000);
+	}, 1000); 
 	setTimeout(function() {
 		newFunction("Get Set!");
 	}, 2000);
@@ -39,7 +41,7 @@ function beginRound() {
     }, 1000);
     //players start
     //set keys so players can move around field
-	$(document).keydown(function(event) {
+    function keydownFunction(event){
 		if (event.which == 38) {
 			$('#r1').stop(true).animate({"top": "-=80px"});
 		} else if (event.which == 37) {
@@ -55,6 +57,8 @@ function beginRound() {
 			$('#r2').stop(true).animate({left: "+=80"});
 		}
 		if (parseInt($('#r1').css("top")) < parseInt($('#finish').css("top"))) {
+			console.log();
+			document.removeEventListener("keydown", keydownFunction);
 			// alert("Player1 wins the race!");
 			//end timer
 	   		//need a var to keep track of how many times player won game
@@ -62,8 +66,9 @@ function beginRound() {
    			document.getElementById("score1").innerHTML = score1;
    			//create function to signify round has ended
    			round++;
-   			myFunction();
+   			//myFunction();
 		} else if (parseInt($('#r2').css("top")) < parseInt($('#finish').css("top"))) {
+			document.getElementById("finish").removeEventListener("keydown", keydownFunction);
 	   		// alert("Player2 wins the race!");
 	   		//end timer
 	   		//need a var to keep track of how many times player won game
@@ -71,7 +76,9 @@ function beginRound() {
 	   		document.getElementById("score2").innerHTML = score2;
 	   		//create function to signify round has ended
 	   		round++;
-	   		myFunction();
+	   		//myFunction();
 		}
-	});
+	}
+	document.addEventListener("keydown", keydownFunction);
+
 }
