@@ -93,7 +93,7 @@ function beginRound() {
 			$('#r2').css("left", "60%");
 			console.log("hello");
 	   		//need a var to keep track of how many times player won game
-	   		score1+= timer;
+	   		score1 += timer;
 	   		var racer1timer = timer;
 	   		timer = 1;
    			document.getElementById("score1").innerHTML = "<span>Player 1 Score: " + score1 + "</span>";
@@ -115,7 +115,7 @@ function beginRound() {
 			$('#r2').stop(true);
 			$('#r2').css("left", "60%");
 	   		//need a var to keep track of how many times player won game
-	   		score2+= timer;
+	   		score2 += timer;
 	   		var racer2timer = timer;
 	   		timer = 1;
    			document.getElementById("score2").innerHTML = "<span> Player 2 Score: " + score2 + "</span>";
