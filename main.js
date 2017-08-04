@@ -10,9 +10,9 @@ var gameInterval;
 
 function displayWinMessage() {
 	if(score1 > score2) {
-		alert("Player 1 wins!");
+		alert("Player 1 wins with a score of " + score1 + "!"); // total timer points at end, higher points wins at round 3
 	} else {
-		alert("Player 2 wins!");
+		alert("Player 2 wins with a score of " + score2 + "!");
 	}	
 	round = 1;
 	score1 = 0;
@@ -93,10 +93,10 @@ function beginRound() {
 			$('#r2').css("left", "60%");
 			console.log("hello");
 	   		//need a var to keep track of how many times player won game
-	   		score1++;
-	   		var round1timer = timer;
+	   		score1+= timer;
+	   		var racer1timer = timer;
 	   		timer = 1;
-   			document.getElementById("score1").innerHTML = "<span>Player 1 Score: " + score1 + " " + "<span>Timer: (" + round1timer + ")</span>";
+   			document.getElementById("score1").innerHTML = "<span>Player 1 Score: " + score1 + "</span>";
    			//create function to signify round has ended
    			round++;
    			console.log(timer);
@@ -115,10 +115,10 @@ function beginRound() {
 			$('#r2').stop(true);
 			$('#r2').css("left", "60%");
 	   		//need a var to keep track of how many times player won game
-	   		score2++;
-	   		var round1timer = timer;
+	   		score2+= timer;
+	   		var racer2timer = timer;
 	   		timer = 1;
-   			document.getElementById("score2").innerHTML = "<span> Player 2 Score: " + score2 + " " + "<span>Timer: (" + round1timer + ")</span>";
+   			document.getElementById("score2").innerHTML = "<span> Player 2 Score: " + score2 + "</span>";
 	   		//create function to signify round has ended
 	   		round++;
 	   		clearInterval(myint);
@@ -126,7 +126,6 @@ function beginRound() {
 	   		roundOver = true;
 		}
 		}
-
 	}
 
 	document.addEventListener("keydown", keydownFunction);
